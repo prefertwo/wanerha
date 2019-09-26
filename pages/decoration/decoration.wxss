@@ -1,0 +1,20 @@
+/* pages/decoration/decoration.wxss */
+.wrap {
+  /* display: flex; */
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  /* padding: 100rpx 0; */
+
+}
+
+.wrap .item {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200rpx;
+  margin-top: 200rpx;
+}
+.wrap .item image {
+  width: 100rpx;
+  height: 100rpx;
+}

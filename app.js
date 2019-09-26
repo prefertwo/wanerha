@@ -34,6 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    icon: '', // 给头像加的图标的图片路径
+    iconName: '', // 图片名字，根据名字做特殊处理
   }
 })

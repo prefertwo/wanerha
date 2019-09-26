@@ -1,0 +1,24 @@
+<!--pages/decoration/decoration.wxml-->
+
+<view class="wrap">
+  <view class="item" data-icon="face" bindtap="setIcon">
+    <image src="../resources/icons/face.png"></image>
+    <text>笑脸</text>
+  </view>
+  <view class="item" data-icon="gohst_128" bindtap="setIcon">
+    <image src="../resources/icons/gohst_128.png"></image>
+    <text>小鬼</text>
+  </view>
+  <view class="item" data-icon="hat" bindtap="setIcon">
+    <image src="../resources/icons/hat.png"></image>
+    <text>帽子</text>
+  </view>
+  <view class="item" data-icon="snowman" bindtap="setIcon">
+    <image src="../resources/icons/snowman.png"></image>
+    <text>雪人</text>
+  </view>
+  <view class="item" data-icon="newyear" bindtap="setIcon">
+    <image src="../resources/icons/newyear.png"></image>
+    <text>灯笼</text>
+  </view>
+</view>

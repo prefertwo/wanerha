@@ -1,0 +1,13 @@
+<!--pages/canvas/canvas.wxml-->
+<view class="container">
+
+<text class="intro">先点击获取头像并允许，然后点击保存就可以啦！</text>
+
+<canvas class="canvas" canvas-id="canvas"></canvas>
+
+<view class="btns">
+<button type="primary" size="mini" open-type="getUserInfo" bindgetuserinfo="getUserInfo" >获取头像</button>
+<button type="primary" size="mini" bindtap="saveAvatar" >保存头像</button>
+</view>
+
+</view>

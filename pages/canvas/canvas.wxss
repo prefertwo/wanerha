@@ -1,0 +1,18 @@
+/* pages/canvas/canvas.wxss */
+.container {
+  padding: 100rpx 0;
+}
+.container .intro {
+  width: 80%;
+}
+.canvas {
+  width: 200px;
+  height: 200px;
+  margin: 100rpx 0;
+  border: rgba(100, 100, 100, .4) solid 1px;
+}
+
+.btns {
+  width: 80%;
+  justify-content: space-around;
+}

@@ -17,7 +17,7 @@ Page({
 
   // 获取用户信息
   getUserInfo: function(e) {
-    console.log('userInfo==', e.detail.userInfo);
+    // console.log('userInfo==', e.detail.userInfo);
     // this.setData({
     //   avatarImage: e.detail.userInfo.avatarUrl
     // })
@@ -30,7 +30,7 @@ Page({
     wx.getImageInfo({
       src: filePath,
       success: (res) => {
-        console.log('res=', res)
+        // console.log('res=', res)
         filePathLocal = res.path;
 
         context.drawImage(filePathLocal, 0, 0, 200, 200);
@@ -61,7 +61,7 @@ Page({
 
       },
       fail: (err) => {
-        console.log('err=', err)
+        // console.log('err=', err)
       }
     })
   },
@@ -76,20 +76,20 @@ Page({
       canvasId: 'canvas',
       quality: 1,
       success: (res) => {
-        console.log('res==', res)
+        // console.log('res==', res)
         let filePath = res.tempFilePath;
         wx.saveImageToPhotosAlbum({
           filePath: filePath,
           success: (res) => {
-            console.log('baocun==', res)
+            // console.log('baocun==', res)
           },
           fail: (err) => {
-            console.log('err==', err)
+            // console.log('err==', err)
           }
         })
       },
       fail: (err) => {
-        console.log('err==', err)
+        // console.log('err==', err)
       }
     }, this)
 

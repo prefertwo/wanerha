@@ -3,7 +3,7 @@
 <view class="container">
 
 <view class="section" hover-class="section-hover" data-page="decoration" bindtap="goSection" >装饰头像</view>
-<view class="section" hover-class="section-hover" data-page="decoration" bindtap="goSection" >打开地图</view>
+<!-- <view class="section" hover-class="section-hover" data-page="decoration" bindtap="goSection" >打开地图</view> -->
 <!-- <view class="section" data-page="decoration" bindtap="goSection" >装饰头像</view>
 <view class="section" data-page="decoration" bindtap="goSection" >装饰头像</view>
 <view class="section" data-page="decoration" bindtap="goSection" >装饰头像</view>

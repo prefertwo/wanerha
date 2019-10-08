@@ -17,7 +17,7 @@ Page({
 
   // 获取用户信息
   getUserInfo: function(e) {
-    // console.log('userInfo==', e.detail.userInfo);
+    console.log('userInfo==', e.detail.userInfo);
     // this.setData({
     //   avatarImage: e.detail.userInfo.avatarUrl
     // })
@@ -26,11 +26,14 @@ Page({
     let icon = app.globalData.icon;
 
     let filePath = e.detail.userInfo.avatarUrl;
+    let pathArr = filePath.split("/");
+    filePath = pathArr.splice(pathArr.length-1, 1, 0);
     let filePathLocal = '';
     wx.getImageInfo({
-      src: filePath,
+      // src: filePath,
+      src: pathArr.join('/'),
       success: (res) => {
-        // console.log('res=', res)
+        console.log('res=', res)
         filePathLocal = res.path;
 
         context.drawImage(filePathLocal, 0, 0, 200, 200);
